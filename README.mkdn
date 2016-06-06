@@ -1,38 +1,18 @@
-# AuManifest
-The Manifest for the AuOSP Sources!
+==================================
+The AurumOS Project for YU Devices
+==================================
 
-
-To get started with the AuOS sources, you'll need to get familiar with Git and Repo.
-
-Install the Repository
-
-Enter the following to download the "repo" binary and make it executable:
-
-mkdir ~/bin && curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo && chmod a+x ~/bin/repo
-
-You may need to reboot for these changes to take effect.
-
-Create the Directories
-
-You will need to set up some directories in your build environment.
-
-To create them run:
-
-mkdir -p ~/YUOS
-cd ~/YUOS
-Repositories:
-
-Before you continue --> run this in the terminal
-
-repo init -u git://github.com/YUTeleventures/platform_manifest.git -b yu-mm-6.0.1
-
-&& 
-
-repo sync -c -f -j8 --force-sync --no-clone-bundle --no-tags
-Building the System
-
-Initialize the environment with the envsetup.sh script. Note that replacing "source" with a single dot saves a few characters, and the short form is more commonly used in documentation.
-
-. build/envsetup.sh
-lunch yu_$(Device)-user
-make -j8 otapackage or brunch $(Device)
+How to sync ?
+=============
+- 1- Repo init the LA.BR.1.2.6-01710-8x16.0  CAF Tag
+	- To do so, use this command "repo init -u git://codeaurora.org/platform/manifest.git -b release -m default_LA.BR.1.2.6-01710-8x16.0.xml"
+	- List of the CAF Tags here : https://www.codeaurora.org/xwiki/bin/QAEP/release
+- 2- Add the linked local_yu.xml to .repo/local_manifests
+- 3- Sync
+- 4- How to build ?
+	- A - ". build/envsetup.sh"
+	- B - "lunch full_DEVICE-user"
+	- C - Kernel chooser (For tomato/lettuce --> "mv kernel_yu_msm8916_64/ kernel/") **OR** (For jalebi --> "mv kernel_yu_msm8916_32/ kernel/")
+	- D - "rm -rf hardware/libhardware/modules/sensors"
+	- E - "make -j8 otapackage"
+- 5- Here you're done

@@ -6,12 +6,12 @@
 
   <remote  name="par"
             fetch="git://github.com/aosparadox/"/>
+            
+  <remote  name="au"
+            fetch="git://github.com/AurumOS/"/>
 
   <remote name="gitlab"
             fetch="ssh://git@gitlab.com/YU_CAF/" />
-
-  <remote name="aosparadox"
-            fetch="ssh://git@github.com/aosparadox/"/>
 
   <remote  name="qcom"
             fetch="git://codeaurora.org/quic/la/platform/packages/apps/"/>
@@ -94,7 +94,7 @@
   <project path="kernel_yu_msm8916_32" name="android_kernel_cyanogen_msm8916" remote="par" revision="yu-par-6.0-jalebi" />
 
   <!-- Vendor -->
-  <project path="vendor/aosparadox" name="android_vendor_aosparadox" remote="par" revision="marshmallow"/>
+  <project path="vendor/auos" name="vendor_auos" remote="au" revision="marshmallow"/>
   <project path="vendor/yu/" name="proprietary_vendor_yu" remote="par" revision="yu-par-6.0" />
 
   <!-- Needed LP repos -->
