@@ -85,7 +85,7 @@
 
   <!-- MSIM -->
   <project name="android_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="par" revision="msim-8916-par-6.0" />
-  <project name="android_packages_apps_Settings" path="packages/apps/Settings" remote="par" revision="msim-8916-par-6.0" />
+  <project name="android_packages_apps_Settings" path="packages/apps/Settings" remote="au" revision="msim-8916-au-6.0" />
   <project name="android_packages_services_Telephony" path="packages/services/Telephony" remote="par" revision="msim-8916-par-6.0" />
 
   <!-- TODO: Add MultiVariant kernel possibility -->
