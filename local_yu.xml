@@ -63,14 +63,14 @@
   </project>
   <project name="android_device_qcom_msm8916_32" path="device/qcom/msm8916_32" remote="par" revision="yu-par-6.0" />
   <project name="android_device_qcom_msm8916_64" path="device/qcom/msm8916_64" remote="par" revision="yu-par-6.0" />
-  <project name="android_device_qcom_sepolicy" path="device/qcom/sepolicy" remote="par" revision="8916-par-6.0" />
+  <project name="device_qcom_sepolicy" path="device/qcom/sepolicy" remote="au" revision="8916-par-6.0" />
 
 
   <!-- Custom YU CAF repos -->
   <project groups="pdk" name="android_build" path="build" remote="par" revision="8916-par-6.0">
     <copyfile dest="Makefile" src="core/root.mk"/>
   </project>
-  <project name="android_external_sepolicy" path="external/sepolicy" remote="par" revision="8916-par-6.0" />
+  <project name="external_sepolicy" path="external/sepolicy" remote="au" revision="8916-par-6.0" />
   <project name="android_external_tinycompress" path="external/tinycompress" remote="par" revision="8916-par-6.0" />
   <project name="android_external_tinyalsa" path="external/tinyalsa" remote="par" revision="8916-par-6.0" />
   <project name="android_frameworks_base" path="frameworks/base" remote="par" revision="yu-par-6.0" />
