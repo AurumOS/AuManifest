@@ -6,7 +6,11 @@ The aurumOS Project
 
 To get started with aurumOS, you'll need to get familiar with Git and Repo.
 
-**To initialize your local repository using the AOSP/CAF based aurumOS source, use this command:**
+**To initialize your local repository of aurumOS source, use this command:**
+```bash
+mkdir au && cd au
+```
+
 ```bash
 repo init -u git://github.com/aurumOS/platform_manifest.git -b au-1.0
 ```
