@@ -1,0 +1,50 @@
+===================
+The aurumOS Project
+===================
+
+**Getting Started**
+
+To get started with aurumOS, you'll need to get familiar with Git and Repo.
+
+**To initialize your local repository using the AOSP/CAF based aurumOS source, use this command:**
+```bash
+repo init -u git://github.com/aurumOS/AuManifest.git -b au-1.0
+```
+
+**Sync up with this command:**
+```bash
+repo sync -f -jX 
+```
+(-f being for force and replace the X in -jX with the number of cpus/threads your box contains (WARNING: Going too high can severely drag performance)
+
+**Initiate the build with:**
+```bash
+. build/envsetup.sh
+```
+**Prepare your device with:**
+```bash
+lunch (pick your devices number from the list)
+```
+**Then light up the bomb:**
+```bash
+time make aurum -jX (x being the amount of cores/threads)
+```
+## Contribute to aurumOS ## 
+aurumOS is open sourced and welcomes new contributors.
+
+To start contributing to aurumOS, please contact us!
+
+## Using our assets ##
+
+**Code**
+
+Our codebase is licensed under Apache License, Version 2.0 unless otherwise specified. Apache License 2.0 allows a variety of actions on the content as long as licensing and copyright notices are retained and included with the code and your changes to the codebase are stated.
+
+You can read the full license text at http://www.apache.org/licenses/LICENSE-2.0
+
+
+
+
+##Important##
+
+The code is under development! Please don't sync yet, 'Cause it ain't ready!
