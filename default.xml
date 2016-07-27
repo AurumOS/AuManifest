@@ -10,7 +10,7 @@
            fetch=".." />
 
   <remote  name="au"
-           revision="refs/heads/mm"
+           revision="au-1.0"
            fetch=".."
            review="gerrit.aurum.cf" />
 
@@ -22,7 +22,7 @@
   <remote  name="private"
            fetch="ssh://git@github.com" />
 
-  <default revision="refs/heads/au-1.0"
+  <default revision="au-1.0"
            remote="au"
            sync-c="true"
            sync-j="4" />
