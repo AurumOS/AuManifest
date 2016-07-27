@@ -27,7 +27,7 @@ lunch (pick your devices number from the list)
 ```
 **Then light up the bomb:**
 ```bash
-time make aurum -jX (x being the amount of cores/threads)
+time make goldingot -jX (x being the amount of cores/threads)
 ```
 ## Contribute to aurumOS ## 
 aurumOS is open sourced and welcomes new contributors.
