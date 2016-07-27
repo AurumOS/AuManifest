@@ -22,7 +22,7 @@
   <remote  name="private"
            fetch="ssh://git@github.com" />
 
-  <default revision="refs/heads/mm"
+  <default revision="refs/heads/au-1.0"
            remote="au"
            sync-c="true"
            sync-j="4" />
